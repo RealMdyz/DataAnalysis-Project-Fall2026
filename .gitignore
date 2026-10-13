@@ -1,0 +1,17 @@
+# Large data must NOT go to GitHub (project rule)
+data/raw/
+data/processed/
+*.jsonl
+*.jsonl.gz
+*.parquet
+*.csv.gz
+
+# Large model files
+models/*
+!models/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/

@@ -1,0 +1,11 @@
+# Central project settings. Change values here, not inside notebooks.
+
+seed: 42                    # main random seed (spec: seeds must be recorded)
+
+data:
+  category: Toys_and_Games  # tentative, finalized in task 3
+  raw_dir: data/raw
+  processed_dir: data/processed
+
+window:
+  months: 3                 # report window length; sensitivity analysis in phase 4
