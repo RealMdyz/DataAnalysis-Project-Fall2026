@@ -1,0 +1,13 @@
+issue,count,decision,reason
+Exact duplicate reviews (level A/B),10695,drop (keep first copy),"same user, product and second: a collection error, not a second opinion"
+"Same user + product, different time (level C)",1378,"keep, flag",can be a genuine update after using the product longer
+Same user + text on another product (level D),15579,"keep, flag; revisit in phase 2",may be one review shown on sister listings; would double-count text when learning aspects
+Same long text from different users (level E),10360,"keep, flag; inspect in phase 2",may be templates or spam; too early to delete without reading them
+Empty review text,1226,keep for rating analysis; no text features,the star rating is still valid information
+Very short text (1-20 chars),92833,keep,'Great!' is a real opinion; it simply carries no aspect information
+"Reviews with markup in text (HTML, video codes)",112254,clean in phase 2 preprocessing,markup is not customer language and would confuse text models
+"Impossible values (rating, time, price)",0,none found; no action,all values inside valid ranges
+Price missing,34313,keep; study in task 6,need to know if missingness is random before choosing how to handle it
+Price outliers (> $1000),74,keep; use log(price); flag miscategorised items,mostly real high-end products (e.g. DJI Inspire drones); a few are miscategorised (e.g. a weighing scale)
+helpful_vote outliers,854,keep; never a model feature,real but collected after the review was written (leakage)
+Heavy reviewers (>= 50 reviews),121,"keep, flag; inspect suspicious ones in phase 2","most look like enthusiasts (mixed ratings, long texts, many years); a few look suspicious (very short texts, high ratings, short active period)"
