@@ -3,9 +3,17 @@
 seed: 42                    # main random seed (spec: seeds must be recorded)
 
 data:
-  category: Toys_and_Games  # tentative, finalized in task 3
+  category: Toys_and_Games  # Amazon Reviews'23 category file (decided in task 3)
   raw_dir: data/raw
   processed_dir: data/processed
+
+subset:
+  # Decided in task 3 (2026-10-15), BEFORE any modeling; do not change after
+  # seeing results. A product is in the subset if ANY entry of its `categories`
+  # list (Amazon's own category tree) matches this regex (case-insensitive).
+  name: remote_controlled
+  category_regex: 'remote\s*&\s*app\s*controlled|remote[- ]control'
+  # Whether to drop spare parts / accessories: decided in task 4.
 
 window:
   months: 3                 # report window length; sensitivity analysis in phase 4

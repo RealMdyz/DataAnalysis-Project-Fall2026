@@ -1,0 +1,126 @@
+{
+  "category": "Toys_and_Games",
+  "products_in_meta": 890874,
+  "products_with_reviews": 890667,
+  "reviews": 16260406,
+  "first_review_utc": "1998Q4",
+  "last_review_utc": "2023Q3",
+  "top_subcategories": [
+    [
+      "Preschool",
+      136564
+    ],
+    [
+      "Games & Accessories",
+      100240
+    ],
+    [
+      "Party Supplies",
+      79979
+    ],
+    [
+      "Toy Figures & Playsets",
+      67950
+    ],
+    [
+      "Remote & App Controlled Vehicles & Parts",
+      55584
+    ],
+    [
+      "Sports & Outdoor Play",
+      45075
+    ],
+    [
+      "Arts & Crafts",
+      41267
+    ],
+    [
+      "Puzzles",
+      39226
+    ],
+    [
+      "Novelty & Gag Toys",
+      38075
+    ],
+    [
+      "Dolls & Accessories",
+      27852
+    ],
+    [
+      "Stuffed Animals & Plush Toys",
+      25974
+    ],
+    [
+      "Collectible Toys",
+      25668
+    ],
+    [
+      "Dress Up & Pretend Play",
+      22929
+    ],
+    [
+      "Learning & Education",
+      19542
+    ],
+    [
+      "Building Toys",
+      17541
+    ]
+  ],
+  "rc": {
+    "by_category_tree": {
+      "products": 71046,
+      "products_with_reviews": 71043,
+      "reviews": 862444,
+      "share_of_all_reviews": 0.053,
+      "product_quarters_with_at_least": {
+        "5": 29789,
+        "10": 12697,
+        "20": 5610,
+        "50": 1792
+      },
+      "products_with_any_quarter_at_least": {
+        "5": 8292,
+        "10": 3481,
+        "20": 1497,
+        "50": 483
+      }
+    },
+    "by_title": {
+      "products": 39033,
+      "products_with_reviews": 39029,
+      "reviews": 637551,
+      "share_of_all_reviews": 0.0392,
+      "product_quarters_with_at_least": {
+        "5": 24662,
+        "10": 11240,
+        "20": 4971,
+        "50": 1499
+      },
+      "products_with_any_quarter_at_least": {
+        "5": 6562,
+        "10": 3052,
+        "20": 1368,
+        "50": 411
+      }
+    },
+    "either": {
+      "products": 79074,
+      "products_with_reviews": 79070,
+      "reviews": 1001959,
+      "share_of_all_reviews": 0.0616,
+      "product_quarters_with_at_least": {
+        "5": 36657,
+        "10": 15764,
+        "20": 6757,
+        "50": 2020
+      },
+      "products_with_any_quarter_at_least": {
+        "5": 10034,
+        "10": 4338,
+        "20": 1867,
+        "50": 557
+      }
+    }
+  }
+}

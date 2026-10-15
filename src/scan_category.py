@@ -43,6 +43,9 @@ def quarter_of(ts_ms):
 def main():
     cfg = yaml.safe_load(open(ROOT / "configs" / "config.yaml", encoding="utf-8"))
     cat = cfg["data"]["category"]
+    global RC_CATEGORY
+    if "subset" in cfg:  # single source of truth once the subset is decided
+        RC_CATEGORY = re.compile(cfg["subset"]["category_regex"], re.I)
     raw = ROOT / cfg["data"]["raw_dir"]
 
     # ---- pass 1: product metadata ----

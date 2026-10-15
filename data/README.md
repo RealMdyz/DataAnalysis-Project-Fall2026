@@ -18,7 +18,7 @@ Everything here must be rebuildable from the scripts in `src/`.
 | حجم کل | حدود ۵۷۱ میلیون نقد، ۵۴ میلیون کاربر، ۴۸ میلیون محصول، ۳۳ دسته |
 | دسته‌ی ما (Toys_and_Games) | حدود ۱۶٫۳ میلیون نقد، ۸٫۱ میلیون کاربر، ۸۹۰ هزار محصول |
 | نوع داده | **مشاهده‌ای** |
-| مجوز | _تکمیل در تسک ۳_ |
+| مجوز | مجوز صریحی برای داده منتشر نشده (MIT مخزن گیت‌هاب فقط برای کد است)؛ استفاده‌ی آموزشی، بدون بازنشر، با ارجاع به مقاله |
 
 ### نوع داده: مشاهده‌ای
 
@@ -47,14 +47,22 @@ Everything here must be rebuildable from the scripts in `src/`.
 
 </div>
 
-## Files (per category)
-| File | Content | Download date |
-|---|---|---|
-| `raw/<Category>.jsonl` | User reviews | _to fill (task 3)_ |
-| `raw/meta_<Category>.jsonl` | Product metadata | _to fill (task 3)_ |
+## Files
+Downloaded with `python src/download_data.py`. Exact URLs, sizes and SHA-256
+hashes are in `download_manifest.json`.
+
+| File | Content | Size | Downloaded (UTC) |
+|---|---|---|---|
+| `raw/Toys_and_Games.jsonl.gz` | User reviews (16,260,406 lines) | 1.95 GB | 2026-10-14 |
+| `raw/meta_Toys_and_Games.jsonl.gz` | Product metadata (890,874 lines) | 0.66 GB | 2026-10-14 |
 
 ## Subset rules
-_To fill in tasks 3 and 10, and locked before modeling._
+1. **Remote-controlled products** (task 3, locked before modeling): a product is
+   kept if any entry of its `categories` list matches `subset.category_regex` in
+   `configs/config.yaml`. Scan results: `reports/phase1/category_scan.json`
+   (`python src/scan_category.py`).
+2. Spare parts / accessories: _task 4_.
+3. Time range and minimum reviews per product-window: _task 10_.
 
 ## Folder layout
 ```
