@@ -1,0 +1,106 @@
+{
+  "lines_read": {
+    "meta": 890874,
+    "reviews": 16260406
+  },
+  "unparseable_lines": {
+    "meta": 0,
+    "reviews": 0
+  },
+  "kept": {
+    "products": 71046,
+    "reviews": 862444
+  },
+  "duplicate_parent_asin_in_kept_meta": 0,
+  "field_types": {
+    "meta": {
+      "author": {
+        "dict": 17,
+        "missing": 8,
+        "absent": 890849
+      },
+      "average_rating": {
+        "float": 890874
+      },
+      "bought_together": {
+        "missing": 890874
+      },
+      "categories": {
+        "list": 890874
+      },
+      "description": {
+        "list": 890874
+      },
+      "details": {
+        "dict": 890874
+      },
+      "features": {
+        "list": 890874
+      },
+      "images": {
+        "list": 890874
+      },
+      "main_category": {
+        "str": 869017,
+        "missing": 21857
+      },
+      "parent_asin": {
+        "str": 890874
+      },
+      "price": {
+        "missing": 462209,
+        "float": 428665
+      },
+      "rating_number": {
+        "int": 890874
+      },
+      "store": {
+        "str": 885517,
+        "missing": 5357
+      },
+      "subtitle": {
+        "str": 21,
+        "missing": 4,
+        "absent": 890849
+      },
+      "title": {
+        "str": 890874
+      },
+      "videos": {
+        "list": 890874
+      }
+    },
+    "reviews": {
+      "asin": {
+        "str": 16260406
+      },
+      "helpful_vote": {
+        "int": 16260406
+      },
+      "images": {
+        "list": 16260406
+      },
+      "parent_asin": {
+        "str": 16260406
+      },
+      "rating": {
+        "float": 16260406
+      },
+      "text": {
+        "str": 16260406
+      },
+      "timestamp": {
+        "int": 16260406
+      },
+      "title": {
+        "str": 16260406
+      },
+      "user_id": {
+        "str": 16260406
+      },
+      "verified_purchase": {
+        "bool": 16260406
+      }
+    }
+  }
+}

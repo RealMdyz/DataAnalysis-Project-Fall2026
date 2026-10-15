@@ -13,7 +13,8 @@ subset:
   # list (Amazon's own category tree) matches this regex (case-insensitive).
   name: remote_controlled
   category_regex: 'remote\s*&\s*app\s*controlled|remote[- ]control'
-  # Whether to drop spare parts / accessories: decided in task 4.
+  # Spare parts / accessories are KEPT (decided in task 4, 2026-10-15); vehicles
+  # vs parts is compared later as a subgroup analysis (phase 4).
 
 window:
   months: 3                 # report window length; sensitivity analysis in phase 4

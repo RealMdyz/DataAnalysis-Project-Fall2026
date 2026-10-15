@@ -61,7 +61,10 @@ hashes are in `download_manifest.json`.
    kept if any entry of its `categories` list matches `subset.category_regex` in
    `configs/config.yaml`. Scan results: `reports/phase1/category_scan.json`
    (`python src/scan_category.py`).
-2. Spare parts / accessories: _task 4_.
+2. Spare parts / accessories are **kept** (task 4); vehicles vs parts becomes a
+   subgroup comparison in phase 4. Subset built with `python src/build_subset.py`
+   -> `processed/meta_rc.parquet` (71,046 products) and
+   `processed/reviews_rc.parquet` (862,444 reviews); 0 unparseable lines.
 3. Time range and minimum reviews per product-window: _task 10_.
 
 ## Folder layout
