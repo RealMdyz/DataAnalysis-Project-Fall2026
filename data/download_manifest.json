@@ -1,0 +1,18 @@
+{
+  "Toys_and_Games.jsonl.gz": {
+    "kind": "reviews",
+    "category": "Toys_and_Games",
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Toys_and_Games.jsonl.gz",
+    "downloaded_utc": "2026-10-14T15:42:05+00:00",
+    "size_bytes": 1948910944,
+    "sha256": "0ba8278988b3b83d99d51fe8c521ec18b7e87d4339404b534942792f5ef845cc"
+  },
+  "meta_Toys_and_Games.jsonl.gz": {
+    "kind": "meta",
+    "category": "Toys_and_Games",
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Toys_and_Games.jsonl.gz",
+    "downloaded_utc": "2026-10-14T16:04:32+00:00",
+    "size_bytes": 658655829,
+    "sha256": "c69383112c0c0b0f10439eada942f2cf430511b993d2af8c665a5349c8749f07"
+  }
+}
