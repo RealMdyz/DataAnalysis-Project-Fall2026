@@ -30,3 +30,13 @@ window:
                             # (threshold on review COUNT only, never on ratings)
   start: "2015-01-01"       # earlier years have < 200 report-ready windows per year
   end: "2023-03-31"         # windows from Apr 2023 are incomplete (Q2 = 62%, Q3 = 16% of 2022)
+
+split:
+  # Temporal split (task 11, LOCKED 2026-10-27, before any modeling). Boundaries fall on window
+  # starts, so no 3-month window is cut in two. The test period is LOCKED:
+  # it is used once, at the end of phase 3, never for tuning.
+  # train      = window.start   .. validation_start - 1 day
+  # validation = validation_start .. test_start - 1 day
+  # test       = test_start     .. window.end
+  validation_start: "2021-01-01"
+  test_start: "2022-01-01"

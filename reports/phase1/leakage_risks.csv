@@ -1,0 +1,10 @@
+risk,why it leaks,safeguard
+"average_rating, rating_number (product)","computed in 2023 from ALL reviews, incl. future ones",never a model feature; used only for sanity checks
+helpful_vote,collected after the review is published; older reviews have more,never a model feature
+reviews per product (lifetime),counts future reviews; linked to rating (best-sellers less negative),"if used, count only reviews BEFORE the prediction time"
+price / price missing,taken in 2023; missing price may mean 'discontinued later',use with care; phase-3 ablation with and without price features
+random row split,test products' future reviews end up in training; hides drift over time,"temporal split (train 2015-2020, validation 2021, test 2022-2023Q1)"
+duplicated / copied texts,same text in train and test lets the model memorise the answer,drop exact duplicates; check and report text overlap between splits
+fitting on all data,"vocabulary, scaling, aspect clusters learnt from test data","fit every learnt step on train only, then apply to validation and test"
+tuning on test,choosing models or thresholds by test score,test period locked; used once at the end of phase 3
+selecting units by outcome,e.g. 'keep windows with >= 5 negative reviews' uses the label,report-unit threshold uses review COUNT only (task 10)
