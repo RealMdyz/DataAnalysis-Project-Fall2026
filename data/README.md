@@ -65,7 +65,9 @@ hashes are in `download_manifest.json`.
    subgroup comparison in phase 4. Subset built with `python src/build_subset.py`
    -> `processed/meta_rc.parquet` (71,046 products) and
    `processed/reviews_rc.parquet` (862,444 reviews); 0 unparseable lines.
-3. Time range and minimum reviews per product-window: _task 10_.
+3. **Report units** (task 10, locked before modeling): 3-month calendar windows,
+   a product-window needs >= 20 reviews, analysis period 2015-01-01 to 2023-03-31
+   (see `window` in `configs/config.yaml` and `notebooks/06_window_feasibility.ipynb`).
 
 ## Folder layout
 ```
