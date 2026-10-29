@@ -40,3 +40,12 @@ split:
   # test       = test_start     .. window.end
   validation_start: "2021-01-01"
   test_start: "2022-01-01"
+
+evaluation:
+  # Decided in task 12 (2026-10-29), BEFORE any phase-2/3 modeling.
+  target: rating_numeric        # 1-5 stars as a number
+  primary_metric: macro_mae     # MAE per true star (1..5), then averaged
+  secondary_metrics: [mae, f1_negative, ap_negative]
+  negative_max_star: 2          # 1-2 stars = negative review
+  negative_threshold: 2.5       # prediction < 2.5 -> "negative"
+  main_baseline: tfidf_ridge    # B5; phase 3 must beat validation macro-MAE 0.724
