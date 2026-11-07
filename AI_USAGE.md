@@ -33,5 +33,8 @@
 | ۷ آبان ۱۴۰۵ | Claude | نوشتن نوت‌بوک خط مبنا و معیارها (`notebooks/08_baselines.ipynb`)؛ پیشنهاد شکل هدف، معیار macro-MAE و شش خط مبنا؛ پیش‌نویس جمع‌بندی | پرسیدن معنی هر معیار (MAE، macro-MAE، F1، AP، اسپیرمن) و هر خط مبنا با مثال عددی | اجرای نوت‌بوک روی سیستم خودم؛ مرور جدول نتایج، خطا به تفکیک امتیاز و محصولات جدید؛ تأیید تصمیم‌ها پس از فهم مثال‌ها | تنظیمات B5 عمداً تنظیم نشده‌اند؛ آستانه‌ی ۲٫۵ قراردادی است |
 | ۷ آبان ۱۴۰۵ | Claude | پیشنهاد سه سؤال اولیه و استدلال انتخاب سؤال اصلی؛ شمارش جفت بازه‌های متوالی (`notebooks/06_window_feasibility.ipynb`، بخش ۹)؛ مرور ۱۴ بند کارت پروژه و یکی کردن اعداد | پرسیدن الزام سند برای سه سؤال و بررسی سازگاری اعداد کارت با نوت‌بوک‌ها | تأیید سه سؤال و دلیل انتخاب پس از بحث؛ اجرای نوت‌بوک ۶ روی سیستم خودم | درصد افزایش نقد منفی فقط روی جفت‌های آموزش حساب شد |
 | ۷ آبان ۱۴۰۵ | Claude | پیش‌نویس و ساخت گزارش فاز ۱ (`reports/phase1.pdf`) و برگه‌ی اعداد (`reports/phase1/numbers_sheet.md`)؛ بازگرداندن جمع‌بندی‌های جاافتاده‌ی نوت‌بوک‌های ۱، ۲، ۴، ۵ و ۷ | خواستن گزارش کامل از روی جمع‌بندی نوت‌بوک‌ها، جدول‌های `reports/phase1/` و کارت پروژه، بدون عدد جدید | خواندن کامل گزارش و تطبیق اعداد با برگه‌ی اعداد و خروجی نوت‌بوک‌ها | متن گزارش پیش‌نویس هوش مصنوعی است و پس از خواندن من نهایی شد |
-
+## Phase 2: Progress Log (Preprocessing & Text Representation)
+- **Tool**: Gemini / Claude Code
+- **Scope**: Guidance on sentence tokenization pipeline, resolving Python environment conflicts (pyarrow/fastparquet/scikit-learn on Windows), implementing dual text representation (TF-IDF & all-MiniLM-L6-v2), and UMAP dimensionality reduction.
+- **Validation**: All scripts and models were executed locally in VS Code notebook environment; outputs (matrix shapes, execution time, and UMAP distribution plots) were independently validated.
 </div>
