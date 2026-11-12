@@ -40,4 +40,7 @@
 - **Tool**: Gemini
 - **Scope**: Assisting with K-Means clustering pipeline on 5D UMAP embeddings, hyperparameter selection using Elbow (Inertia) and Silhouette Score, and c-TF-IDF keyword extraction for aspect interpretation.
 - **Validation**: Executed locally in VS Code (`10_phase2_clustering.ipynb`); verified cluster separation plots, aspect keyword coherence, and rating distributions across clusters.
+- **Tool**: Gemini
+- **Scope**: Assisting with cluster stability evaluation using Adjusted Rand Index (ARI) across random seeds and 80% subsamples, and aggregating review-level aspect ratios merged with structured product metadata.
+- **Validation**: Executed locally in VS Code (`11_phase2_stability_and_features.ipynb`); verified high ARI stability (~0.97) and leak-free feature matrix generation (`14,792 x 30`).
 </div>
