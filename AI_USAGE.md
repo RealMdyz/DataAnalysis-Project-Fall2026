@@ -37,4 +37,7 @@
 - **Tool**: Gemini / Claude Code
 - **Scope**: Guidance on sentence tokenization pipeline, resolving Python environment conflicts (pyarrow/fastparquet/scikit-learn on Windows), implementing dual text representation (TF-IDF & all-MiniLM-L6-v2), and UMAP dimensionality reduction.
 - **Validation**: All scripts and models were executed locally in VS Code notebook environment; outputs (matrix shapes, execution time, and UMAP distribution plots) were independently validated.
+- **Tool**: Gemini
+- **Scope**: Assisting with K-Means clustering pipeline on 5D UMAP embeddings, hyperparameter selection using Elbow (Inertia) and Silhouette Score, and c-TF-IDF keyword extraction for aspect interpretation.
+- **Validation**: Executed locally in VS Code (`10_phase2_clustering.ipynb`); verified cluster separation plots, aspect keyword coherence, and rating distributions across clusters.
 </div>
