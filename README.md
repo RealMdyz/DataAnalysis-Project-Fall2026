@@ -30,6 +30,18 @@ live in `configs/config.yaml`. Raw and processed data are not committed.
 - Split: temporal; train 2015-2020, validation 2021, test 2022 to Mar 2023 (locked)
 - Primary metric: macro-MAE; text baseline (TF-IDF + Ridge) = 0.724 on validation
 
+
+## 🔍 Phase 2 Highlights: Aspect Discovery & Feature Engineering
+- **Aspect Discovery (k=5):** Unsupervised K-Means clustering on UMAP-reduced sentence embeddings (derived from 139,520 extracted sentences in the training period 2015–2020). Identified 5 core product aspects: RC Car Performance, Buying Value & Price, Drone Flight & Camera, Battery & Charging, and Gift & Kids Engagement.
+- **Pattern Stability:** Verified cluster robustness using Adjusted Rand Index (ARI), achieving high stability across random seeds ($\text{ARI} = 0.9682$) and 80% subsamples ($\text{ARI} = 0.9710$).
+- **Multimodal Feature Matrix:** Generated a review-level engineered dataset containing 30 features (`14,792 × 30`) stored at `data/processed/phase2_train_engineered_features.parquet`.
+- **Phase Report:** The comprehensive Phase 2 report (including UMAP visualizations, Silhouette/Elbow analysis, and the 30-feature catalog) is available as both Markdown (`reports/phase2/phase2.md`) and a formatted PDF (`reports/phase2/phase2.pdf`).
+
+## 🛠️ Reproducing the Phase 2 Report
+To automatically build or update the Phase 2 report PDF from the Markdown source and embedded figures, run the provided build script:
+```bash
+python src/build_phase2_report.py
+
 | Notebook | Content |
 |---|---|
 | `01_structure_audit` | Files, columns, identifiers, joins, time range |
@@ -40,6 +52,9 @@ live in `configs/config.yaml`. Raw and processed data are not committed.
 | `06_window_feasibility` | Report units, minimum reviews, analysis period, consecutive pairs |
 | `07_leakage_split` | Leakage risks and the temporal split |
 | `08_baselines` | Target, metrics and six baselines |
+| `09_phase2_preprocessing` | Sentence extraction, dual text representation (TF-IDF & Sentence Transformers), and UMAP |
+| `10_phase2_clustering` | K-Means aspect discovery ($k=5$), elbow/silhouette selection, and interpretation |
+| `11_phase2_stability_and_features` | Cluster stability evaluation (ARI) and review-level multimodal feature engineering (30 features) |
 
 ## Repository layout
 | Path | Content |
@@ -58,7 +73,7 @@ live in `configs/config.yaml`. Raw and processed data are not committed.
 | Phase | Deadline | Tag | Status |
 |---|---|---|---|
 | 1 — Problem, data audit, EDA | 12 Aban 1405 | `phase-1` | done |
-| 2 — Preprocessing, features, pattern discovery | 27 Aban 1405 | `phase-2` | — |
+| 2 — Preprocessing, features, pattern discovery | 27 Aban 1405 | `phase-2` | done |
 | 3 — Predictive modeling & experiment design | 27 Azar 1405 | `phase-3` | — |
 | 4 — Interpretation, subgroups, decisions | 15 Dey 1405 | `phase-4` | — |
 | 5 — Robustness & final report | 5 Bahman 1405 | `phase-5-final` | — |
